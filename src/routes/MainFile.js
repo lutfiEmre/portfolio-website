@@ -287,9 +287,9 @@ const MainFile = () => {
                         <Spotify/>
                     </motion.div>
                 <div className={'relative'}>
-                    <div id={'aboutme-section'} className={'absolute top-[17rem] sm:top-[11rem] md:top-[8.4rem]'}></div>
+                    <div id={'aboutme-section'} className={'absolute top-[24.5rem] sm:top-[12rem] md:top-[8.4rem] lg:top-[9.8rem]'}></div>
                 </div>
-                    <motion.div variants={item} className={'flex flex-col sm:flex-row gap-6 lg:justify-between scale-[75%] md:justify-center md:scale-[75%] sm:scale-[75%] sm:gap-6 lg:scale-100 md:gap-12 lg:w-full -mt-9 -mb-12 sm:mt-0 sm:mb-20 md:mb-0 md:mt-[15px]'}>
+                    <motion.div variants={item} className={'flex flex-col sm:flex-row gap-6 lg:justify-between scale-[75%] md:justify-center md:scale-[75%] sm:scale-[75%] sm:gap-6 lg:scale-100 md:gap-12 lg:w-full mt-8 mb-2 sm:mt-0 sm:mb-20 md:mb-0 md:mt-[35px]'}>
                         <a target={"_blank"} href="https://medium.com/@emrelutfi/cssde-flow-root-%C3%B6zelli%C4%9Fi-i%CC%87%C3%A7erik-ak%C4%B1%C5%9F%C4%B1n%C4%B1-y%C3%B6netmek-i%CC%87%C3%A7in-neden-kullan%C4%B1l%C4%B1r-bcf5e9f718c8">
                         <Projectt title={'Last Writing'} projectName={'CSS: flow-root'}
                                   projectDesc={'The display: flow-root property is used in CSS to control the layout of nested elements.'}
@@ -300,7 +300,7 @@ const MainFile = () => {
                                   projectDesc={'This project is a simple Twitter clone built using React, Tailwind, and React Icons.'}/>
                         </a>
                     </motion.div>
-                <svg className={'w-full h-full mt-4 -mb-1 md:mb-4 md:mt-8 sm:mb-2 sm:mt-2'} viewBox="0 0 871 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className={'w-full h-full mt-4 -mb-4 md:mb-4 md:mt-8 sm:mb-0 sm:mt-7'} viewBox="0 0 871 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="path-1-inside-1_93_19959" fill="white">
                         <path d="M0 0H856.103V14H0V0Z"/>
                     </mask>
@@ -344,11 +344,11 @@ const MainFile = () => {
 
                 <h4 className={'font-text13  text-black xl:text-7xl sm:text-5xl text-4xl md:text-5xl lg:text-6xl  mt-16 mb-4 sm:mt-6 sm:mb-4 md:my-6 dark:text-white '}>MY UI & UX Projects</h4>
                 <Uiuxproject/>
-                <div className={'relative'}>
-                    <div id={'projects-section'} className={'absolute -top-[36.8rem] sm:-top-20'}></div>
+                <div className={'relative '}>
+                    <div id={'projects-section'} className={'absolute -top-[36.8rem] md:-top-[5rem] lg:-top-[5.7rem]'}></div>
                 </div>
                 <h4   className={'font-text13  text-black xl:text-7xl sm:text-5xl text-4xl md:text-5xl lg:text-6xl  lg:my-6 md:mt-8 md:-mb-6 dark:text-white sm:mt-7 sm:mb-4 lg:my-10 -mb-2 sm:mt-22 mt-6'}>MY CODE PROJECTS</h4>
-                <div className={'flex flex-col lg:gap-[30px] md:-mt-0 -mt-10 sm:-mt-10 md:gap-[5px] items-center '}>
+                <div className={'flex flex-col lg:gap-[30px] md:-mt-0 -mt-10 sm:-mt-10 md:gap-[15px] items-center '}>
                     <div className={'flex sm:flex-row flex-col gap-5 w-[350px] sm:w-full lg:justify-between scale-[75%] md:justify-center md:scale-[63%] sm:scale-[75%] sm:gap-6 lg:scale-100 md:gap-12 lg:w-full mt-4 sm:mt-6 sm:mb-16 md:mb-0 md:mt-[15px]'}>
                         <a target={'_blank'} href="https://medium.com/@emrelutfi/cssde-responsive-tasar%C4%B1m%C4%B1n-olmazsa-olmaz%C4%B1-clamp-fonksiyonu-52dba6833475">
                         <Projectt title={'Last Writing'} projectName={'CSS:The Essential Clamp() Function in '}
@@ -361,7 +361,7 @@ const MainFile = () => {
                                       projectDesc={'This project is a simple Twitter clone built using React, Tailwind, and React Icons.'}/>
                         </a>
                     </div>
-                    <div className={'flex sm:flex-row flex-col -mt-24 gap-5 w-[350px] sm:w-full lg:justify-between scale-[75%] md:justify-center md:scale-[63%] sm:scale-[75%] sm:gap-6 lg:scale-100 md:gap-12 lg:w-full  sm:mt-6 sm:mb-16 md:mb-0 md:mt-[15px]'}>
+                    <div className={'flex sm:flex-row flex-col -mt-24 gap-5 w-[350px] sm:w-full lg:justify-between scale-[75%] md:justify-center md:scale-[63%] sm:scale-[75%] sm:gap-6 lg:scale-100 md:gap-12 lg:w-full  sm:mt-6 sm:mb-16 md:mb-0 md:mt-[-40px] lg:mt-[15px]'}>
                         <a target={"_blank"} href="https://medium.com/@emrelutfi/cssde-flow-root-%C3%B6zelli%C4%9Fi-i%CC%87%C3%A7erik-ak%C4%B1%C5%9F%C4%B1n%C4%B1-y%C3%B6netmek-i%CC%87%C3%A7in-neden-kullan%C4%B1l%C4%B1r-bcf5e9f718c8">
                             <Projectt title={'Last Writing'} projectName={'CSS: flow-root'}
                                       projectDesc={'The display: flow-root property is used in CSS to control the layout of nested elements.'}
@@ -372,7 +372,7 @@ const MainFile = () => {
                                   projectDesc={'This application is a TODO app made with React. The app features a filter input for filtering todos. Additionally, the top box displays the number of todos that have been added.'}/>
                         </a>
                     </div>
-                    <div className={'flex sm:flex-row flex-col gap-5  -mt-24 w-[350px] sm:w-full lg:justify-between scale-[75%] md:justify-center md:scale-[63%] sm:scale-[75%] sm:gap-6 lg:scale-100 md:gap-12 lg:w-full mt-12 sm:mt-6 sm:mb-16 md:mb-0 md:mt-[15px]'}>
+                    <div className={'flex sm:flex-row flex-col gap-5  -mt-24 w-[350px] sm:w-full lg:justify-between scale-[75%] md:justify-center md:scale-[63%] sm:scale-[75%] sm:gap-6 lg:scale-100 md:gap-12 lg:w-full sm:mt-6 sm:mb-16 md:mb-0 md:mt-[-40px] lg:mt-[15px] lg:mb-[10px]'}>
                         <a target={'_blank'} href="https://github.com/lutfiEmre/react-weatherapp">
                         <Projectt title={'Last Project'} projectName={'Weather App'}
                                   projectDesc={'This is a weather application built with React. When the user enters a city name, the application fetches the weather data for that city and displays the temperature, feels like temperature, country name, city name, and population information.'}/>
