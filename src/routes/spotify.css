@@ -1,0 +1,99 @@
+.dragolmasin{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+}
+
+.music {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+    z-index: 30;
+    animation: move 1.5s ease-out;
+    transition: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+.delay1{
+    animation-delay: 900ms;
+}
+.delay2{
+    margin-top: 12px;
+    animation-delay: 700ms;
+}
+.delay3{
+    margin-top: -10px !important;
+    animation-delay: 500ms;
+}
+
+@keyframes move{
+    0% {
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.5;
+    }
+    30%{
+        bottom: 15px;
+        right: 5px;
+        opacity: 0.8;
+    }
+    50% {
+        bottom: 25px;
+        right: 10px;
+        opacity: 0.5;
+    }
+    70%{
+        right: 20px;
+        bottom: 19px;
+    }
+    100% {
+        bottom: 25px;
+        opacity: 0;
+    }
+}
+
+.fas.fa-music {
+    position: absolute;
+    bottom: 0;
+    font-size: 24px;
+    color: #333;
+}
+.dark .spotifymains{
+    background: linear-gradient(180deg, #C6D0F5 0%, rgba(203, 214, 255, 0.79) 29.69%, #ABBDFF 59.37%, #BAC9FF 93.75%) !important;
+}
+.spotifymains{
+    background: linear-gradient(180deg, #284671 0%, #435C90 10.94%, #546EA5 54.69%, #2F4B84 81.77%, #284671 100%);
+    border-radius: 13.6175px;
+}
+.anst{
+    animation: ansta 1.5s ease-out;
+    transition: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ansta{
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}

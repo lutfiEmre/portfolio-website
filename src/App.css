@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Fira+Code:wght@300;400;500;600;700&family=Mina:wght@400;700&family=Odibee+Sans&family=Rokkitt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  cursor: url("./imgs/minimal-banana-cursor-pack.png"), auto !important;
+  background-color: #EFF1F5;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::selection{
+  background-color: rgba(14, 23, 44, 0.2);
+}
+.navbarbu{
+  background: rgba(255, 255, 255, 0.23);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(255, 255, 255, 0.37);
+}
+#root{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+@font-face {
+  font-family: 'MinaFont';
+  src: url('./fonts/Mina-Bold.woff') format('opentype');
+}
+@font-face {
+  font-family: 'MenloFont';
+  src: url('./fonts/Menlo-Regular.woff') format('opentype');
+}
+@font-face {
+  font-family: 'FrankFont';
+  src: url('./fonts/Franklin Gothic Demi Cond Regular.ttf') format('opentype');
+}
+
+
+/* 'CustomFont' yazı tipini kullanmak için aşağıdaki sınıfı tanımlayabilirsiniz */
+.font-navbar{
+  font-family: 'MinaFont', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0.125em;
+}
+.font-footer{
+  font-family: 'MinaFont', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.08em;
+}
+.font-text1{
+  font-family: 'MenloFont', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  /* identical to box height */
+  letter-spacing: 0.08em;
+}
+.font-text2{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px;
+}
+.font-text3{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.font-text4{
+  font-family: 'Finger Paint', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 41px;
+}
+
+.font-text5{
+  margin-top: 3px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0px;
+}
+.font-text6{
+  font-family: 'Fira Code', monospace;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  /* or 153% */
+}
+.font-text7{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 51px;
+}
+.font-text8{
+  font-family: FrankFont;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.26em;
+}
+.font-text9{
+  font-family: 'Finger Paint', cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* or 123% */
+}
+.font-text10{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 51px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.font-text11{
+  font-family: 'Rokkitt', serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 54px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.font-text12{
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: justify;
+  letter-spacing: 0.02em;
+
+
+}
+.font-text13{
+  font-family: 'Odibee Sans', cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+.font-text14{
+  font-family: 'Rokkitt', serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 54px;
+}
+.font-text15{
+  font-family: 'Rokkitt', serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 54px;
+  /* identical to box height, or 340% */
+
+  letter-spacing: 0.53em;
+}
+.font-text16{
+  font-family: 'Finger Paint', cursive;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  /* identical to box height, or 227% */
+}
+.font-text17{
+  font-family: 'Rokkitt', serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  /* identical to box height, or 227% */
+}
+.font-text18{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  /* or 104% */
+  text-align: center;
+}
+.font-text19{
+  font-family: 'Rokkitt', serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 54px;
+}
+.font-text20{
+  font-family: 'Original Surfer', cursive;
+  font-style: normal;
+
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.h-calculate{
+  height: calc(1440px - 198px);
+}
+
+
+#hello{
+  color: #C10000;
+}
+#devtext{
+  color: #00AB4F;
+}
+.nbshadow{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nbshadow2{
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
+.glas2{
+  width: 100vw;
+  height: 100vh;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.93);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.4px);
+  -webkit-backdrop-filter: blur(11.4px);
+}
+
+
+.butons:active{
+  background: red;
+}
+.butons:hover{
+  background: #8ebace !important;
+}
+.butonsgroup{
+  cursor: pointer;
+}
+.butonsgroup:hover .butons{
+  background: #627279;
+}
+.asdasd{
+  z-index: 0 !important;
+}

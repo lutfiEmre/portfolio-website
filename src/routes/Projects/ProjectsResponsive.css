@@ -1,0 +1,50 @@
+/*
+@media only screen and (max-width: 1024px) {
+    .Projects {
+        margin-left: 5vw;
+        margin-top: 5vw;
+    }
+    .Proje{
+        grid-row-gap: 12vw;
+        grid-column-gap: 10vw;
+    }
+    .item1,
+    .item2,
+    .item3{
+        width: 12vw;
+        height:8vw;
+    }
+    .kagit{
+        top: -1vw;
+        right: -1.5vw;
+        height: 4vw;
+    }
+    .proje-item:hover .item1,
+    .proje-item:hover .item2,
+    .proje-item:hover .item3{
+        transition: 0.2s;
+        margin-top: 1.5vw;
+    }
+    .projectfooter .footer-item1,
+    .projectfooter .footer-item2,
+    .projectfooter .footer-item3{
+        width: 40vw;
+        height: 8vw;
+    }
+    .projectfooter{
+        cursor: pointer;
+        margin-top: 12vw;
+        margin-left: 12vw;
+    }
+    .projectfooter:hover{
+        cursor: pointer;
+        transition: 0.2s;
+        margin-top: 13.5vw;
+    }
+    .ipp #tus{
+        height: 6vw;
+    }
+    .ipp #button{
+        height: 6vw;
+    }
+}*/

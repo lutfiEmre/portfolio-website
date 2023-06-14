@@ -1,0 +1,247 @@
+.Projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    flex-direction: column;
+}
+.Proje{
+    display: grid;
+    grid-template-columns: Auto Auto Auto;
+    grid-template-rows: Auto Auto Auto Auto Auto Auto;
+    grid-row-gap: 2.4vw;
+    grid-column-gap: 1vw;
+}
+.projectfooter{
+    position: relative;
+
+}
+.projectfooter:hover{
+    transition: 0.1s;
+    margin-top: 2.7vw;
+}
+.projectfooter:hover .footer-item1,
+.projectfooter:hover .footer-item2,
+.projectfooter:hover .footer-item3{
+    margin-top: 0.1vw;
+}
+.projectfooter:hover #tus{
+    transition: 0.2s;
+    top: 0.2vw;
+}
+.projectfooter:hover #button{
+    transition: 0.2s;
+    top: 0.4vw;
+}
+.projectfooter .footer-item1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    z-index: 5;
+}
+.ipp{
+    position: relative;
+
+
+}
+.ipp #tus{
+    position: absolute;
+    top: 0.3vw;
+    left: 0;
+    height: 2.5vw;
+}
+.ipp #button{
+    position: absolute;
+    top: 0.5vw;
+    right: 0.3vw;
+    height: 2vw;
+}
+.projectfooter{
+    cursor: pointer;
+}
+.projectfooter .footer-item2{
+    position: absolute;
+    top: 0.6vw;
+    right: 0.6vw;
+    background-color: #03C988;
+
+    z-index: 4;
+}
+.projectfooter .footer-item3{
+    position: absolute;
+    top: 1.2vw;
+    right: 1.2vw;
+    background-color: #000957;
+    z-index: 3;
+}
+.proje-item{
+    overflow: auto !important;
+    cursor: pointer;
+    position: relative;
+    width: 15vw;
+    height: 5vw;
+}
+.kagit{
+    position: absolute;
+    overflow: auto !important;
+    top: 0vw;
+    right: 0vw;
+    height: 1.5vw;
+}
+.proje-item:hover .item1,
+.proje-item:hover .item2,
+.proje-item:hover .item3{
+    transition: 0.2s;
+    margin-top: 0.3vw;
+}
+
+
+
+.item1{
+    overflow: auto !important;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    width: 9vw;
+    height: 4vw;
+    z-index: 5;
+}
+.item1:hover{
+    opacity: 0;
+    transition: 3s;
+}
+.proje-item pre{
+    display: block !important;
+    font-size: 20px;
+    color: black;
+}
+.item2 pre{
+    display: block !important;
+    font-family: Arial;
+    font-size: 12px;
+    color: white !important;
+}
+.item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0.5vw;
+    right: 0.5vw;
+    background-color: #03C988;
+    width: 9vw;
+    z-index: 4;
+    height: 4vw;
+}
+
+
+.item3{
+    position: absolute;
+    top: 1vw;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    right: 1vw;
+    background-color: #000957;
+    width: 9vw;
+    height: 4vw;
+    z-index: 3;
+}
+.item3 pre {
+    color: white !important;
+}
+.popup{
+    margin-top: -100vh;
+    transition: 1s;
+    visibility: hidden;
+    position: absolute;
+    top: 4vh;
+    z-index: 10;
+    margin-left: -1vw;
+    border-radius: 0.2vw;
+    background-color: black;
+    width: 25.4%;
+    height: 280px;
+}
+@media only screen and (max-height: 1440px){
+    .popup{
+        margin-top: -100vh;
+        transition: 0.5s;
+        visibility: hidden;
+        position: absolute;
+        top: 4vh;
+        z-index: 10;
+        margin-left: -1vw;
+        border-radius: 0.2vw;
+        background-color: black;
+        width: 25.4%;
+        height: 160px;
+    }
+    .popup h1{
+        font-size: 2vw !important;
+    }
+    .popup hr{
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
+    #kapat{
+        height: 2.2vw;
+        cursor: pointer;
+    }
+    .popup p{
+        color: white;
+        font-size: 22px !important;
+        word-wrap: break-word;
+        display: flex;
+        padding: 0px 10px 0px 0px !important;
+        flex-direction: column;
+    }
+}
+.item1 pre{
+    user-select: none;
+}
+.popup #kapat{
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+.acik{
+    margin-top: -2vh;
+    transition: 1s;
+    visibility: visible;
+}
+.popup h1{
+    font-size: 3vw;
+}
+.popup hr{
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+#kapat{
+    height: 2.2vw;
+    cursor: pointer;
+}
+.popup p{
+    color: white;
+    font-size: 25px;
+    word-wrap: break-word;
+    display: flex;
+    padding: 0px 10px 0px 25px;
+    flex-direction: column;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
