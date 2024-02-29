@@ -3,7 +3,8 @@
   <a href="https://emrelutfi.com" target="_blank">emrelutfi.com</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="https://media.discordapp.net/attachments/458045331024904192/1212735145275297792/Group_108.png?ex=65f2ea9e&is=65e0759e&hm=f0ba6817fe8059511dd73aaa6dc14e4ee5e253b325caaeed94f5257e780f7007&=&format=webp&quality=lossless&width=886&height=700" />
+  <img alt="Demo" src="![image](https://github.com/lutfiEmre/portfolio-website/assets/58309253/799c856f-af7b-4a8b-978f-ab407bfcc5e8)
+" />
 </div>
 
 <br/>
