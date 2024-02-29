@@ -3,8 +3,7 @@
   <a href="https://emrelutfi.com" target="_blank">emrelutfi.com</a>
 </h2>
 <div align="center">
-  <img alt="Demo" src="![image](https://github.com/lutfiEmre/portfolio-website/assets/58309253/799c856f-af7b-4a8b-978f-ab407bfcc5e8)
-" />
+  <img alt="Demo" src="https://github.com/lutfiEmre/portfolio-website/assets/58309253/799c856f-af7b-4a8b-978f-ab407bfcc5e8" />
 </div>
 
 <br/>
