@@ -2,49 +2,49 @@ import {useContext, useState} from "react";
 import StoreContext from "../StoreContext";
 import ScrollIntoView from 'react-scroll-into-view';
 
-import menu from '../imgs/menu-svgrepo-com.svg'
+
 
 
 const Navbar = () => {
     const [openMenu,setOpenmenu] = useState(false)
     const {darkmode,setDarkmode,todarkmode} = useContext(StoreContext)
     return(
-        <div className={'w-screen navbarbu absolute z-50  h-[100px]  md:flex justify-center items-center dark:bg-dark-bg2 nbshadow'}>
+        <div className={'w-screen navbarbu  absolute z-50 h-[80px]  md:h-[100px]  md:flex justify-center items-center dark:bg-dark-bg2 nbshadow'}>
             <ul className={'md:flex opacity-75 hover:opacity-100 hidden gap-[34px] '}>
-                <li className={'font-navbar md:text-xl lg:text-3xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer hover:text-outtext5'}>
+                <li className={'font-navbar md:text-xl lg:text-3xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer dark:hover:text-white hover:text-outtext5'}>
                 <ScrollIntoView selector="#home-section">
-                    <a href="#home-section">
+                    <a aria-label={'emrelutfi home'} href="#home-section">
                             Home
                     </a>
                 </ScrollIntoView>
                 </li>
 
-                <li className={'font-navbar md:text-xl lg:text-3xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer hover:text-outtext5'}>
+                <li className={'font-navbar md:text-xl lg:text-3xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer dark:hover:text-white hover:text-outtext5'}>
                     <ScrollIntoView selector="#aboutme-section">
-                        <a href="#aboutme-section">
+                        <a aria-label={'emrelutfi aboutme'} href="#aboutme-section">
                             About Me
                         </a>
                     </ScrollIntoView>
                 </li>
 
-                <li className={'font-navbar md:text-xl lg:text-3xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer hover:text-outtext5'}>
+                <li className={'font-navbar md:text-xl lg:text-3xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer dark:hover:text-white hover:text-outtext5'}>
                     <ScrollIntoView selector="#skills-section">
-                        <a href="#skills-section">
+                        <a aria-label={'emrelutfi skills'} href="#skills-section">
                             Skills
                         </a>
                     </ScrollIntoView>
                 </li>
 
-                <li className={'font-navbar md:text-xl lg:text-3xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer hover:text-outtext5'}>
+                <li className={'font-navbar md:text-xl lg:text-3xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer dark:hover:text-white hover:text-outtext5'}>
                     <ScrollIntoView selector="#projects-section">
-                        <a href="#projects-section">
+                        <a aria-label={'emrelutfi projects'} href="#projects-section">
                             Projects
                         </a>
                     </ScrollIntoView>
                 </li>
-                <li className={'font-navbar md:text-xl lg:text-3xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer hover:text-outtext5'}>
+                <li className={'font-navbar md:text-xl lg:text-3xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer dark:hover:text-white hover:text-outtext5'}>
                     <ScrollIntoView selector="#music-section">
-                        <a href="#music-section">
+                        <a aria-label={'emrelutfi music'}  href="#music-section">
                             Music
                         </a>
                     </ScrollIntoView>
@@ -53,12 +53,12 @@ const Navbar = () => {
             <div className={'md:hidden z-0 opacity-75 hover:opacity-100 w-full h-full flex justify-center items-center'}>
                 <svg onClick={() => {
                     setOpenmenu(!openMenu)
-                }} className={'ml-12 w-32 h-32 cursor-pointer'} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path className={'dark:fill-white fill-dark-text4 '} fill-rule="evenodd" clip-rule="evenodd" d="M2 7a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm1 4a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3z" fill="#000000"/></svg>
+                }} className={'ml-12 w-20 h-20 cursor-pointer'} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path className={'dark:fill-white fill-dark-text4 '} fill-rule="evenodd" clip-rule="evenodd" d="M2 7a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm0 5a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1zm1 4a1 1 0 1 0 0 2h18a1 1 0 1 0 0-2H3z" fill="#000000"/></svg>
                 <div className={'flex md:hidden  justify-center ml-6 items-center w-12 h-12 cursor-pointer'}>
                     {
                         darkmode ? (
                             <div onClick={() => {todarkmode()}}>
-                                <svg width="84" height="73" viewBox="0 0 84 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="65" height="65" viewBox="0 0 84 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_89_370)">
                                         <path d="M72 45.7393H12V61.5219H21.1304V73.0001H62.8696V61.5219H72V45.7393Z" fill="#F87C22"/>
                                         <path d="M58.9566 45.7391V41.4347V37.1304H55.0434H43.3043V41.4347H55.0434V45.7391H28.9566V41.4347H25.0434V45.7391H12V50.0434H72V45.7391H58.9566Z" fill="black"/>
@@ -93,7 +93,7 @@ const Navbar = () => {
                             </div>
                         ): (
                             <div onClick={() => {todarkmode()}}>
-                                <svg className={'w-[60px] h-[66px]'} viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className={'w-[55px] h-[55px]'} viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clipPath="url(#clip0_61_1361)">
                                         <path d="M60 38.7393H0V54.5219H9.13043V66.0001H50.8696V54.5219H60V38.7393Z" fill="#57A4FF"/>
                                         <path d="M43.0434 4.30431V0H20.8695V4.30431H16.9564V8.60875H13.0434V12.9131L9.13086 12.9134V34.4352H13.0434V38.7392H46.9564V30.1304H31.3043V25.8261H27.3917V17.2174H31.3043V12.9131H46.9564V8.60875V4.30431H43.0434Z" fill="#FFDA44"/>
@@ -123,26 +123,26 @@ const Navbar = () => {
                     }
                 </div>
             </div>
-            <div className={`${openMenu ? 'flex' : 'hidden'} md:hidden gap-12 asdasd flex-col items-center pl-4 pt-16 w-screen h-screen dark:bg-border4 bg-light-bg2 glas2 opacity-100     `}>
+            <div className={`${openMenu ? 'flex' : 'hidden'} md:hidden gap-12 asdasd flex-col items-center pl-4 pt-16 w-screen h-screen dark:bg-border4 bg-light-bg2 glas2 opacity-100`}>
                <div className={'flex flex-row justify-center gap-12 items-center'}>
                    <div onClick={() => {setOpenmenu(false)}} className={'flex items-center whitespace-nowrap flex-col'}>
                        <h2 className={'font-navbar text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
                            <ScrollIntoView selector="#home-section">
-                               <a href="#home-section">
+                               <a aria-label={'emrelutfi mobil home'}  href="#home-section">
                                    Home
                                </a>
                            </ScrollIntoView>
                        </h2>
                        <h2 className={'font-navbar opacity-80 text-4xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
                            <ScrollIntoView selector="#home-section">
-                               <a href="#home-section">
+                               <a aria-label={'emrelutfi mobil home'}  href="#home-section">
                                    Home
                                </a>
                            </ScrollIntoView>
                        </h2>
                        <h2 className={'font-navbar opacity-60 text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer'}>
                            <ScrollIntoView selector="#home-section">
-                               <a className={'-mt-4'}  href="#home-section">
+                               <a aria-label={'emrelutfi mobil home'}  className={'-mt-4'}  href="#home-section">
                                    Home
                                </a>
                            </ScrollIntoView>
@@ -152,15 +152,15 @@ const Navbar = () => {
                    <div className={'flex items-center whitespace-nowrap flex-col'}>
                        <ScrollIntoView onClick={() => {setOpenmenu(false)}} selector={"#aboutme-section"}>
                            <a className={'flex items-center whitespace-nowrap flex-col'} href="#aboutme-section">
-                               <h2 className={'font-navbar text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
+                               <h2 aria-label={'emrelutfi mobil aboutme'}  className={'font-navbar text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
                                    About Me
 
                                </h2>
-                               <h2 className={'font-navbar opacity-80 text-4xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
+                               <h2 aria-label={'emrelutfi mobil aboutme'} className={'font-navbar opacity-80 text-4xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
                                    About Me
 
                                </h2>
-                               <h2 className={'font-navbar opacity-60 text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer'}>
+                               <h2 aria-label={'emrelutfi mobil aboutme'} className={'font-navbar opacity-60 text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer'}>
                                    About Me
                                </h2>
                            </a>
@@ -173,13 +173,13 @@ const Navbar = () => {
                     <div className={'flex items-center whitespace-nowrap flex-col'}>
                         <ScrollIntoView onClick={() => {setOpenmenu(false)}} selector={"#skills-section"}>
                             <a className={'flex items-center whitespace-nowrap flex-col'} href="#skills-section">
-                                <h2 className={'font-navbar text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
+                                <h2 aria-label={'emrelutfi mobil skills'} className={'font-navbar text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
                                     Skills
                                 </h2>
-                                <h2 className={'font-navbar opacity-80 text-4xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
+                                <h2 aria-label={'emrelutfi mobil skills'} className={'font-navbar opacity-80 text-4xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
                                     Skills
                                 </h2>
-                                <h2 className={'font-navbar opacity-60 text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer'}>
+                                <h2 aria-label={'emrelutfi mobil skills'} className={'font-navbar opacity-60 text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer'}>
                                     Skills
                                 </h2>
                             </a>
@@ -190,13 +190,13 @@ const Navbar = () => {
                     <div className={'flex items-center whitespace-nowrap flex-col'}>
                         <ScrollIntoView onClick={() => {setOpenmenu(false)}} selector={"#projects-section"}>
                             <a className={'flex items-center whitespace-nowrap flex-col'} href="#projects-section">
-                                <h2 className={'font-navbar text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
+                                <h2 aria-label={'emrelutfi mobil projects'} className={'font-navbar text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
                                     Projects
                                 </h2>
-                                <h2 className={'font-navbar opacity-80 text-4xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
+                                <h2 aria-label={'emrelutfi mobil projects'} className={'font-navbar opacity-80 text-4xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
                                     Projects
                                 </h2>
-                                <h2 className={'font-navbar opacity-60 text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer'}>
+                                <h2 aria-label={'emrelutfi mobil projects'} className={'font-navbar opacity-60 text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer'}>
                                     Projects
                                 </h2>
                             </a>
@@ -209,13 +209,13 @@ const Navbar = () => {
                     <div className={'flex items-center whitespace-nowrap flex-col'}>
                         <ScrollIntoView onClick={() => {setOpenmenu(false)}}  selector={"#music-section"}>
                             <a className={'flex items-center whitespace-nowrap flex-col'} href="#music-section">
-                                <h2 className={'font-navbar text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
+                                <h2 aria-label={'emre lutfi mobil music'}  className={'font-navbar text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
                                     Music
                                 </h2>
-                                <h2 className={'font-navbar opacity-80 text-4xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
+                                <h2 aria-label={'emre lutfi mobil music'} className={'font-navbar opacity-80 text-4xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer '}>
                                     Music
                                 </h2>
-                                <h2 className={'font-navbar opacity-60 text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer'}>
+                                <h2 aria-label={'emre lutfi mobil music'} className={'font-navbar opacity-60 text-2xl text-light-text1 dark:text-dark-text1 select-none cursor-pointer'}>
                                     Music
                                 </h2>
                             </a>

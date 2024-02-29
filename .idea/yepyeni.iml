@@ -5,6 +5,13 @@
       <excludeFolder url="file://$MODULE_DIR$/.tmp" />
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/.composer" />
+      <excludeFolder url="file://$MODULE_DIR$/.nodenv" />
+      <excludeFolder url="file://$MODULE_DIR$/.npm" />
+      <excludeFolder url="file://$MODULE_DIR$/.phpenv" />
+      <excludeFolder url="file://$MODULE_DIR$/.revisium_antivirus_cache" />
+      <excludeFolder url="file://$MODULE_DIR$/.ssh" />
+      <excludeFolder url="file://$MODULE_DIR$/error_docs" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -32,7 +32,8 @@ const SpotifyExtra = () => {
             const interval = setInterval(() => {
                 getSpotifyData();
                 getFavoriteTracks();
-            }, 5000);
+				console.log('veriler basarila aktarildi')
+            }, 15000);
 
             return () => {
                 clearInterval(interval);
@@ -60,7 +61,7 @@ const SpotifyExtra = () => {
             const data = await response.json();
             setAccessToken(data.access_token);
         } catch (error) {
-            console.error('Error refreshing Spotify token:', error);
+            console.error('Error refreshing Spotify token:', );
         }
     };
 
@@ -80,7 +81,7 @@ const SpotifyExtra = () => {
             } else {
             }
         } catch (error) {
-            console.error('Error getting Spotify data:', error);
+            console.error('Error getting Spotify data:');
         }
     };
 
@@ -98,10 +99,10 @@ const SpotifyExtra = () => {
                 const data = await response.json();
                 setFavoriteTracks(data.items);
             } else {
-                console.error('Error getting favorite tracks:', response.status);
+                console.error('Error getting favorite tracks:', );
             }
         } catch (error) {
-            console.error('Error getting favorite tracks:', error);
+            console.error('Error getting favorite tracks:', );
         }
     };
 
@@ -110,20 +111,20 @@ const SpotifyExtra = () => {
     return (
         <div className={'flex flex-row justify-between items-start md:gap-6 md:m-0 sm:mr-4   gap-5 sm:gap-0 md-[400px] lg:w-full '}>
             <div className={'flex flex-col items-center justify-center sm:scale-100  sm:w-[300px] md:w-full leading-3 gap-'}>
-                <h2 className={'font-text14 md:text-2xl whitespace-nowrap lg:text-4xl text-sm text-light-text8 dark:text-white'}>LISTEN LAST MUSIC</h2>
-                <h2 className={'font-text15 -mt-6 text-light-text6 '}>
+                <h2 aria-label={'spotify emrelutfi music listen'} className={'font-text14 md:text-2xl sm:text-2xl whitespace-nowrap lg:text-4xl text-sm text-light-text8 dark:text-white'}>LISTEN LAST MUSIC</h2>
+                <h2 aria-label={'spotify emrelutfi music data'} className={'font-text15 -mt-8 sm:-mt-6 text-light-text6  text-[12px] sm:text-[25px] md:text-[25px] '}>
                     (SPOTIFY)
                 </h2>
-                <h3 className={'font-text19 -mt-9 text-light-text6 mr-1 opacity-60'}>data changes instantly.</h3>
+                <h3 aria-label={'spotify emrelutfi website music'} className={'font-text19 text-[14px] sm:text-[18px] md:text-[19px] -mt-9 text-light-text6 mr-1 opacity-60'}>data changes instantly.</h3>
                 <div className={'flex flex-col gap-6 sm:w-[290px] md:w-[350px]  '}>
                     {dataX.items ? dataX.items.map((item) => (
                         <div key={item.played_at} className={'card'}>
-                            <a target={"_blank"} href={item.track.external_urls.spotify}>
+                            <a aria-label={'spotify emrelutfi website link'} target={"_blank"} href={item.track.external_urls.spotify}>
                                 <div className={'flex flex-col sm:flex-row justify-start w-[150px] sm:w-full sm:pt-0 items-end sm:h-[117px] bg-light-bg5 dark:bg-light-bg4 border-[10px] border-border3 dark:border-border4 rounded-[10px] overflow-hidden'}>
                                     <img className={'w-[150px] sm:w-[100px] md:w-[140px] md:min-w-[140px]'} src={item.track.album.images[0].url} alt=""/>
                                     <div className={'md:w-[180px] pb-[1.4rem] sm:pb-0 sm:w-[230px] w-[125px] h-full flex justify-center items-center flex-col'}>
-                                        <h2 className={'font-text16 mt-3 w-[90%] break-words text-center text-light-text9 text-base dark:text-dark-text4'}>{item.track.name}</h2>
-                                        <h2 className={'font-text17 mt-1 w-full text-center text-md text-white dark:text-dark-text5'}>{item.track.artists[0].name}</h2>
+                                        <h2 aria-label={'spotify emre lutfi song name'} className={'font-text16 mt-3 w-[90%] break-words text-center text-light-text9 text-base dark:text-dark-text4'}>{item.track.name}</h2>
+                                        <h2 aria-label={'spotify emre lutfi artists name'} className={'font-text17 mt-1 w-full text-center text-md text-white dark:text-dark-text5'}>{item.track.artists[0].name}</h2>
                                     </div>
                                 </div>
                             </a>
@@ -131,21 +132,21 @@ const SpotifyExtra = () => {
                     )) : 'Loading songs, please wait :;)'}
                 </div>
             </div>
-            <div className={'flex flex-col items-center justify-center sm:w-[300px] md:w-full leading-3 gap-0'}>
-                    <h2 className={'font-text14 md:text-2xl whitespace-nowrap text-sm lg:text-4xl text-light-text8 dark:text-white '}>MY FAVORITE MUSIC</h2>
-                    <h2 className={'font-text15 -mt-6 text-light-text6'}>
+            <div aria-label={'emrelutfi website'} className={'flex flex-col items-center justify-center sm:w-[300px] md:w-full leading-3 gap-0'}>
+                    <h2 className={'font-text14 md:text-2xl sm:text-2xl  whitespace-nowrap text-sm lg:text-4xl text-light-text8 dark:text-white '}>MY FAVORITE MUSIC</h2>
+                <h2 aria-label={'emre lutfi data web'} className={'font-text15 -mt-8 sm:-mt-6 text-light-text6  text-[12px] sm:text-[25px] md:text-[25px] '}>
                         (SPOTIFY)
                     </h2>
-                    <h3 className={'font-text19 -mt-9 text-light-text6 mr-1 opacity-60'}>data changes instantly.</h3>
+                <h3 aria-label={'emrelutfi website data link'} className={'font-text19 text-[14px] sm:text-[18px] md:text-[19px] -mt-9 text-light-text6 mr-1 opacity-60'}>data changes instantly.</h3>
                     <div className={'flex flex-col gap-6 sm:w-[290px] md:w-[350px] '}>
                         {favoriteTracks?
                             favoriteTracks.map((item) => (
                                 <div className={'card'} key={item.played_at}>
-                                    <a target={"_blank"} href={item.track.external_urls.spotify}>
+                                    <a aria-label={'spotify emre lutfi song name website url'} target={"_blank"} href={item.track.external_urls.spotify}>
                                         <div className={'flex flex-col sm:flex-row sm:w-full w-[150px] sm:pt-0 pt-4 justify-end items-end sm:h-[117px] bg-light-bg5 dark:bg-light-bg4 border-[10px] border-border3 dark:border-border4 rounded-[10px] overflow-hidden'}>
                                             <div className={'md:w-[180px] sm:pb-0 pb-4 sm:w-[230px] w-[110px] h-full flex justify-center items-center flex-col mr-2'}>
-                                                <h2 className={'font-text16 w-[90%] break-words text-center text-light-text9 text-base dark:text-dark-text4'}>{item.track.name}</h2>
-                                                <h2 className={'font-text17 mt-1 w-full text-center text-md text-white dark:text-dark-text5'}>{item.track.artists[0].name}</h2>
+                                                <h2 aria-label={'spotify emre lutfi song name'} className={'font-text16 w-[90%] break-words text-center text-light-text9 text-base dark:text-dark-text4'}>{item.track.name}</h2>
+                                                <h2 aria-label={'spotify emre lutfi artists name'} className={'font-text17 mt-1 w-full text-center text-md text-white dark:text-dark-text5'}>{item.track.artists[0].name}</h2>
                                             </div>
                                             <img className={'w-[150px] sm:w-[100px] md:w-[140px] md:min-w-[140px] h-full'} src={item.track.album.images[0].url} alt=""/>
                                         </div>

@@ -11,6 +11,7 @@ function App() {
     const [darkmode,setDarkmode] = useState(false)
     const [musicon,setMusicon] = useState(false)
     const [durum,setDurum] = useState(false)
+    const [desc,setDesc] = useState('')
     useEffect(() => {
         const modes = localStorage.getItem('modes');
         if (modes === 'light') {
@@ -32,8 +33,8 @@ function App() {
 
     }
   return (
-          <div className={'scroll-smooth w-screen h-screen flex justify-center flex-col items-center bg-light-bg1 dark:bg-dark-bg1 overflow-x-hidden'}>
-                  <StoreContext.Provider value={{darkmode,durum,setDurum, setDarkmode, todarkmode,setMusicon,musicon}}>
+          <div className={'scroll-smooth w-screen h-screen flex justify-center flex-col items-center bg-light-bg1 dark:bg-dark-bg1 overflow-x-hidden arkaplan'}>
+                  <StoreContext.Provider value={{darkmode,durum,setDurum, setDarkmode, todarkmode,setMusicon,musicon,desc,setDesc}}>
                       <MainFile/>
                   </StoreContext.Provider>
           </div>

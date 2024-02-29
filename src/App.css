@@ -22,6 +22,13 @@ body{
 *::selection{
   background-color: rgba(14, 23, 44, 0.2);
 }
+.arkaplan{
+  z-index: 3;
+  background: url("./imgs/VecorLight.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
 .navbarbu{
   background: rgba(255, 255, 255, 0.23);
 
@@ -75,6 +82,16 @@ body{
   line-height: 60px;
   /* identical to box height */
   letter-spacing: 0.08em;
+}
+@media only screen and (max-width: 600px) {
+  .font-text1{
+    font-family: 'MenloFont', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    /* identical to box height */
+    letter-spacing: 0.01em !important;
+  }
 }
 .font-text2{
   font-family: Montserrat;
@@ -177,7 +194,6 @@ body{
   font-family: 'Rokkitt', serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 16px;
   line-height: 54px;
   /* identical to box height, or 340% */
 
@@ -210,7 +226,6 @@ body{
   font-family: 'Rokkitt', serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 14px;
   line-height: 54px;
 }
 .font-text20{

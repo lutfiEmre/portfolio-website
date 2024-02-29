@@ -1,3 +1,12 @@
 .env
+.npm
+.phpenv
+.revisium_antivirus_cache
+.ssh
+error_docs
+.composer
+.nodenv
+tmp
 node_modules
 README.md
+env
