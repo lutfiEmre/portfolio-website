@@ -1,6 +1,6 @@
 <h2 align="center">
   EmreLutfi Design Portfolio Website - v3.0<br/>
-  <a href="https://emrelutfi.com" target="_blank">soumyajit.tech</a>
+  <a href="https://emrelutfi.com" target="_blank">emrelutfi.com</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="https://media.discordapp.net/attachments/458045331024904192/1212735145275297792/Group_108.png?ex=65f2ea9e&is=65e0759e&hm=f0ba6817fe8059511dd73aaa6dc14e4ee5e253b325caaeed94f5257e780f7007&=&format=webp&quality=lossless&width=886&height=700" />
